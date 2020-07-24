@@ -3426,7 +3426,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1607"
+        "default": "1000"
       },
       {
         "name": "OPENVPN_PROVIDER",
@@ -3463,6 +3463,61 @@
         "name": "TZ",
         "label": "TZ",
         "default": "Europe/Berlin"
+      },
+      {
+        "name": "GLOBAL_APPLY_PERMISSIONS2",
+        "label": "GLOBAL_APPLY_PERMISSIONS2",
+        "default": "false"
+      },
+      {
+        "name": "TRANSMISSION_MAX_PEERS_GLOBAL",
+        "label": "TRANSMISSION_MAX_PEERS_GLOBAL",
+        "default": "300"
+      },
+      {
+        "name": "TRANSMISSION_PEER_LIMIT_PER_TORRENT",
+        "label": "TRANSMISSION_PEER_LIMIT_PER_TORRENT",
+        "default": "100"
+      },
+      {
+        "name": "TRANSMISSION_DOWNLOAD_QUEUE_ENABLED",
+        "label": "TRANSMISSION_DOWNLOAD_QUEUE_ENABLED",
+        "default": "true"
+      },
+      {
+        "name": "TRANSMISSION_DOWNLOAD_QUEUE_SIZE",
+        "label": "TRANSMISSION_DOWNLOAD_QUEUE_SIZE",
+        "default": "3"
+      },
+      {
+        "name": "TRANSMISSION_RATIO_LIMIT_ENABLED",
+        "label": "TRANSMISSION_RATIO_LIMIT_ENABLED",
+        "default": "false"
+      },
+      {
+        "name": "TRANSMISSION_RATIO_LIMIT",
+        "label": "TRANSMISSION_RATIO_LIMIT",
+        "default": "0"
+      },
+      {
+        "name": "TRANSMISSION_DOWNLOAD_DIR",
+        "label": "TRANSMISSION_DOWNLOAD_DIR",
+        "default": ""
+      },
+      {
+        "name": "TRANSMISSION_RPC_PORT",
+        "label": "TRANSMISSION_RPC_PORT",
+        "default": ""
+      },
+      {
+        "name": "WEBPROXY_ENABLED",
+        "label": "WEBPROXY_ENABLED",
+        "default": ""
+      },
+      {
+        "name": "WEBPROXY_PORT",
+        "label": "WEBPROXY_PORT",
+        "default": ""
       }
     ]
   },
