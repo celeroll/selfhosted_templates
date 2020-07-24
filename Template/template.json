@@ -3399,36 +3399,45 @@
       "Tools"
     ],
     "platform": "linux",
-    "restart_policy": "unless-stopped",
+    "restart_policy": "always",
     "ports": [
       "9091:9091/tcp"
     ],
     "volumes": [
       {
         "container": "/data",
-        "bind": "/portainer/Downloads"
+        "bind": "/data/configs/dockerconfig/transmission/"
       },
       {
         "container": "/etc/localtime",
         "bind": "/etc/localtime"
+      },
+      {
+        "container": "/etc/resolv.conf",
+        "bind": "/data/configs/dockerconfig/dns/resolv.conf"
       }
     ],
     "env": [
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "1607"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1607"
       },
       {
         "name": "OPENVPN_PROVIDER",
         "label": "OPENVPN_PROVIDER",
         "description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
-        "default": "MULLVAD"
+        "default": "IPVANISH"
+      },
+      {
+        "name": "OPENVPN_CONFIG",
+        "label": "OPENVPN_CONFIG",
+        "default": ""
       },
       {
         "name": "OPENVPN_USERNAME",
@@ -3443,7 +3452,17 @@
       {
         "name": "LOCAL_NETWORK",
         "label": "LOCAL_NETWORK",
-        "default": "192.168.0.0/24"
+        "default": "192.168.1.0/24"
+      },
+      {
+        "name": "OPENVPN_OPTS",
+        "label": "OPENVPN_OPTS",
+        "default": "--inactive 3600 --ping 10 --ping-exit 60 --pull-filter ignore ping --mute-replay-warnings"
+      },
+      {
+        "name": "TZ",
+        "label": "TZ",
+        "default": "Europe/Berlin"
       }
     ]
   },
